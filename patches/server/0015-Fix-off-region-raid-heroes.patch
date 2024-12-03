@@ -9,10 +9,10 @@ raid before it's completion, it would throw an exception due to not being on the
 same region thread anymore.
 
 diff --git a/src/main/java/net/minecraft/world/entity/raid/Raid.java b/src/main/java/net/minecraft/world/entity/raid/Raid.java
-index 7c9d63c94f36c1702fc48570b07393375c77bd21..9339f7b3c4c856fc32abbca0959a961c4fe7e09b 100644
+index 5ff4a4af7f166f5f977efe41263ca487fe1b270b..1df579db8286113f8412fe678259fb53098e57ed 100644
 --- a/src/main/java/net/minecraft/world/entity/raid/Raid.java
 +++ b/src/main/java/net/minecraft/world/entity/raid/Raid.java
-@@ -432,14 +432,22 @@ public class Raid {
+@@ -423,14 +423,22 @@ public class Raid {
                                  LivingEntity entityliving = (LivingEntity) entity;
  
                                  if (!entity.isSpectator()) {
